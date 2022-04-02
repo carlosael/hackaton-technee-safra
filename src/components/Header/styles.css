@@ -1,7 +1,6 @@
 .global-header {
   position: fixed;
   top: 0;
-  background-color: var(--cinza8);
   width: 100%;
   padding-left: 130px;
   padding-right: 30px;
