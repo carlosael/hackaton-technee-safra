@@ -1,0 +1,24 @@
+.global-header {
+  position: fixed;
+  top: 0;
+  background-color: var(--cinza8);
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 30px;
+  z-index: 2;
+  background-color: #00003c;
+  color: white;
+}
+
+.global-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  padding-right: 4rem;
+}
+
+.main-btns {
+  display: flex;
+  gap: 0.5rem;
+}

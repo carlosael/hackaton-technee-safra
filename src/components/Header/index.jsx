@@ -4,8 +4,11 @@ import logoutIcon from "../../assets/logoutIcon.svg";
 import messageIcon from "../../assets/messageIcon.svg";
 import lockIcon from "../../assets/lockIcon.svg";
 import searchIcon from "../../assets/searchIcon.svg";
+import { useHistory } from "react-router-dom";
 
 export default function Header() {
+  const history = useHistory();
+
   return (
     <>
       <header className="global-header">
@@ -23,7 +26,7 @@ export default function Header() {
               <img src={lockIcon} alt="Message Icon" />
               <img src={messageIcon} alt="Message Icon" />
             </div>
-            <div className="logout">
+            <div className="logout" onClick={() => history.push("/")}>
               <img src={logoutIcon} alt="Logout Icon" />
               <p>Sair</p>
             </div>

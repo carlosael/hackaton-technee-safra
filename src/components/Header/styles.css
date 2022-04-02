@@ -6,7 +6,7 @@
   padding-left: 130px;
   padding-right: 30px;
   z-index: 2;
-  background-color: blue;
+  background-color: #00003c;
   color: white;
 }
 
@@ -36,4 +36,5 @@
 .logout {
   display: flex;
   gap: 0.5rem;
+  cursor: pointer;
 }

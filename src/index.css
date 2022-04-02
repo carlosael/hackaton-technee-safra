@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #919a964d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  background-color: #fff;
+
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-height: 80vh;
+  overflow: auto;
+  z-index: 11;
+}
+
+input {
+  all: unset;
+  border-bottom: 2px solid #d0d5dd;
+  margin-top: 0.5rem;
+}

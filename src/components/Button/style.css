@@ -1,0 +1,36 @@
+.main-btn {
+  all: unset;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border: 0.01rem solid #fff;
+}
+
+.yellow {
+  all: unset;
+  background-color: #d4ad68;
+  border: 0.01rem solid #d4ad68;
+  border-radius: 10px;
+  color: #00003c;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  text-align: center;
+}
+
+.blue {
+  all: unset;
+  background-color: #00003c;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  text-align: center;
+}
