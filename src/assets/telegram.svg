@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-telegram">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="telegram" clip-path="url(#clip-telegram)">
+    <g id="Stroke" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="15.5" fill="none"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-3.64 -3.387)">
+      <path id="Path_11" data-name="Path 11" d="M12.9,18.515l13.028-5.1a.418.418,0,0,1,.563.464l-2.09,11.532a.417.417,0,0,1-.675.249L20.4,22.942l-2.579,2.217a.418.418,0,0,1-.671-.193L15.647,20.16,12.932,19.3A.418.418,0,0,1,12.9,18.515Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_12" data-name="Path 12" d="M15.647,20.16l7.295-3.647a.078.078,0,0,1,.092.124L18.773,21.17a1.178,1.178,0,0,0-.273.473l-1.076,3.6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_1" data-name="Line 1" x2="1.656" y2="1.425" transform="translate(18.745 21.518)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

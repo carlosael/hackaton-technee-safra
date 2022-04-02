@@ -1,3 +1,8 @@
+h1 {
+  color: #d4ad68;
+  margin-bottom: 1rem;
+}
+
 .global-header {
   position: fixed;
   top: 0;
@@ -18,7 +23,52 @@
   padding-right: 4rem;
 }
 
+.contianer-home {
+  display: flex;
+}
+
 .main-btns {
   display: flex;
   gap: 0.5rem;
+}
+
+.main-content {
+  margin-top: 10rem;
+}
+
+.first-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+  background-color: #f9f9f9;
+}
+
+.left-card {
+  text-align: left;
+  width: 70%;
+  margin-left: 30rem;
+}
+
+.left-card img {
+}
+
+.right-card img {
+  height: 20.2rem;
+}
+
+.second-card {
+  display: flex;
+  text-align: left;
+  gap: 10rem;
+  background-color: #fff;
+  padding: 10rem 30rem;
+}
+
+.left-text,
+.right-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 25rem;
 }

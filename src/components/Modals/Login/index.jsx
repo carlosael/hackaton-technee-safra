@@ -12,7 +12,7 @@ const defaultValuesForm = {
   senha: "",
 };
 
-function LoginModal({ setOpenAddEditClientModal }) {
+function LoginModal({ setOpenModalLogin }) {
   const history = useHistory();
 
   const [form, setForm] = useState(defaultValuesForm);
@@ -21,7 +21,7 @@ function LoginModal({ setOpenAddEditClientModal }) {
   const [invalidCNPJ, setInvalidCNPJ] = useState(false);
 
   function handleCloseModal() {
-    setOpenAddEditClientModal(false);
+    setOpenModalLogin(false);
   }
 
   function handleChange(target) {
@@ -54,7 +54,7 @@ function LoginModal({ setOpenAddEditClientModal }) {
     if (error) return;
     console.log("foi");
     history.push("/academy");
-    setOpenAddEditClientModal(false);
+    setOpenModalLogin(false);
   }
 
   return (
@@ -106,7 +106,9 @@ function LoginModal({ setOpenAddEditClientModal }) {
         </div>
         <div className="new-acc">
           <p>Ainda não é cliente?</p>
-          <a href="#">Abra sua conta</a>
+          <a href="#">
+            <strong>Abra sua conta</strong>
+          </a>
         </div>
       </div>
     </div>
