@@ -1,0 +1,39 @@
+.global-header {
+  position: fixed;
+  top: 0;
+  background-color: var(--cinza8);
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 30px;
+  z-index: 2;
+  background-color: blue;
+  color: white;
+}
+
+.global-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  padding-right: 4rem;
+}
+
+.header-name {
+  position: relative;
+  display: flex;
+  float: right;
+  gap: 15px;
+  align-items: center;
+  min-width: 140px;
+}
+
+.client-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.logout {
+  display: flex;
+  gap: 0.5rem;
+}
