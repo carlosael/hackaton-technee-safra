@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Hackathon Technee - Safra
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/Grupo_Safra_logo.svg/2560px-Grupo_Safra_logo.svg.png"/>
 
-## Available Scripts
+- Aplicação criada para o Hackathon Technee - [Safra](https://www.safra.com.br/);
 
-In the project directory, you can run:
+## 📋 Requisitos
 
-### `npm start`
+### A aplicação consiste em uma página web voltada para a disseminação da cultura Open Banking.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✔️ Criar uma landpage com tópicos importantes e sistema de login;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✔️ Ao realizar o login, o usuário será redirecionado para página principal;
 
-### `npm test`
+✔️ Página principal com apresentação dos módulos para estudos;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ✔️ Sistema de desbloqueio de módulos conforme avanço do usuário;
 
-### `npm run build`
+    ✔️ Modal com solicitação de adesão ao Open Banking uma vez com módulo introdutório completo;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ✔️ Integração com API Open Banking do Banco Safra para disponibilização de informações;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tecnologias
 
-### `npm run eject`
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="20" height="16" /> ReactJS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://www.kindpng.com/picc/m/67-678384_transparent-javascript-icon-png-png-download.png" width="16" height="16" /> &nbsp;JavaScript
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://eslint.org/assets/img/favicon.512x512.png" width="16" height="16" /> &nbsp;ESLint
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ▶️ Inicializando o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ### **Pré-requisitos**
 
-## Learn More
+  - **Git**
+  - Gerenciador de pacotes **npm** ou **yarn**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Em seguida, clone o repositório
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  $ git clone https://github.com/carlosael/hackaton-technee-safra
+```
 
-### Code Splitting
+E depois:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Iniciando o front-end:
 
-### Analyzing the Bundle Size
+```sh
+  # Abra pasta do projeto
+  $ cd hackaton-technee-safra
+  # Instale as dependencias
+  $ yarn ou npm install
+  # Rode a aplicação
+  $ yarn start ou npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Confira a aplicação online
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://safraopenbanking.netlify.app/
