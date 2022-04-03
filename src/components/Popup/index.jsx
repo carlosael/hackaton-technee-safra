@@ -38,9 +38,7 @@ export default function BasicPopover() {
   return (
     <div className="popup">
       <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-        Conheça algumas de nossas
-        <br />
-        modalidades de empréstimo!
+        Conheça alguns dos <br /> nossos serviços!
       </Button>
       <Popover
         id={id}

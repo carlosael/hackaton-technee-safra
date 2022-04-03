@@ -4,8 +4,8 @@ import Button from "../../components/Button";
 import ModalLogin from "../../components/Modals/Login";
 import MainPhoto from "../../assets/element.JPG";
 import { useState } from "react";
-import SafraAcademyLogo from "../../assets/SafraAcademyFinal.png";
-import AdditionalInfo from "../../assets/complemento.png";
+import SafraOpenBankingLogo from "../../assets/Safra_Open_Banking_Azul.png";
+import AdditionalInfo from "../../assets/complemento2.png";
 
 function Home() {
   const [openModalLogin, setOpenModalLogin] = useState(false);
@@ -30,15 +30,16 @@ function Home() {
       <main className="main-content">
         <div className="first-card">
           <div className="left-card">
-            <img src={SafraAcademyLogo} alt="Safra Academy Logo" />
+            <img src={SafraOpenBankingLogo} alt="Safra Academy Logo" />
             <strong>
               <h1>
-                Plataforma de educação <br /> para empreendedores.
+                Plataforma de educação <br /> sobre Open Banking.
               </h1>
             </strong>
             <p>
-              Aqui você encontra todas as informações <br /> relevantes sobre
-              como o Open Banking pode <br /> alavancar o seu negócio.
+              Visando promover a cultura de dados abertos no <br /> Brasil, o
+              Safra te convida a ser protagonista desse <br /> novo jeito de
+              estar no controle da sua vida financeira.
             </p>
           </div>
           <div className="right-card">
@@ -48,34 +49,40 @@ function Home() {
         <div className="second-card">
           <div className="left-text">
             <h1>
-              Safra Academy feito para quem quer empreender, <br /> feito para
-              você.
+              Com o Open Banking, <br /> a sua relação com o banco jamais será a
+              mesma.
             </h1>
             <p>
-              O <strong>Safra Academy</strong> é o seu gui virtal de{" "}
-              <strong>empreendedorismo</strong> pelo Banco Safra.
+              O <strong>Safra | Open Banking</strong> é o seu guia virtual sobre
+              a cultura de dados abertos pelo Banco Safra e como isso vai mudar
+              a sua relação com os bancos.
             </p>
             <p>
-              Aprenda a como tornar o seu negócio maiseficiente e rentável com
-              aulas feitas porespacialistas do Banco Safra e parceiros.
+              Você no controle! Escolha com quem, quando e como compartilhar os
+              seus dados financeiros com segurança e praticidade.
             </p>
             <p>
-              Um verdadeiro centro de educação para quemquer aprender a
-              empreender com quem sabe doassunto.
+              O Open Banking é a nova era do sistema financeiro, promovendo
+              maior concorrência e melhorando aoferta de produtos e serviços.
             </p>
             <img src={AdditionalInfo} alt="Additional information" />
           </div>
           <div className="right-text">
-            <h2>Para quem é o Safra Academy?</h2>
+            <h2>Para quem é o Safra | Open Banking?</h2>
             <p>
-              Feito especialmente para pequenos e microempresários que desejam
-              abrir o seu negócio deforma rápida e com soluções eficientes.
+              Feito para <strong>qualquer pessoa</strong> que deseja ter mais
+              segurança, versatilidade, controle e agilidade com soluções mais
+              eficientes.
             </p>
             <p>
-              A <strong>Safra Academy</strong> oferece cursos sobre como o Open
-              Finance é benéfico na hora da escolha deserviços financeiros.
+              A <strong>Safra | Open Banking</strong> oferece conteúdos sobre
+              como o <strong>Open Finance</strong> é benéfico na hora da escolha
+              de serviços financeiros.
             </p>
-            <p>Você é dono dos seus dados. Nós te ajudamos a fazer escolhas.</p>
+            <p>
+              Você é dono dos seus dados. <br />
+              Nós te ajudamos a fazer escolhas.
+            </p>
           </div>
         </div>
       </main>
