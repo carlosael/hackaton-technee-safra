@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.988338ce.css",
+    "main.js": "/static/js/main.25d1fab9.js",
+    "static/media/complemento2.png": "/static/media/complemento2.65e73dcf63e8040c82ff.png",
+    "static/media/element.JPG": "/static/media/element.4884d6ea0ba0b99b7c31.JPG",
+    "static/media/logo-safra.svg": "/static/media/logo-safra.7806cde7b89e6ff72dcced4962147275.svg",
+    "static/media/logo-safra-white.svg": "/static/media/logo-safra-white.27f15a7f9344aa615a10257e17719017.svg",
+    "static/media/Safra_Open_Banking_Azul.png": "/static/media/Safra_Open_Banking_Azul.a149778bdb22fecbc4e9.png",
+    "static/media/SOBlogo.png": "/static/media/SOBlogo.ce61b91595c81889e5ee.png",
+    "static/media/unlockedAchievs.png": "/static/media/unlockedAchievs.a58a4dd7bfcc33565475.png",
+    "static/media/searchFile.svg": "/static/media/searchFile.8cbc09c0098afc69ccf06658f7c8ab30.svg",
+    "static/media/books.svg": "/static/media/books.90fbc28b86abe33d94b5f0363bc9074b.svg",
+    "static/media/Youtube.svg": "/static/media/Youtube.889e31d7ccae63f6bbfe4cec0e6c0e60.svg",
+    "static/media/lockIcon.svg": "/static/media/lockIcon.3cbe147a5f6ce78ae4b2c513d2c78b3c.svg",
+    "static/media/icon-linkedin.svg": "/static/media/icon-linkedin.aadf8afa87a025d2cebf2afe49c6a8b7.svg",
+    "static/media/icon-facebook.svg": "/static/media/icon-facebook.3bfea9da3ac9bdb7374f526441fb193c.svg",
+    "static/media/messageIcon.svg": "/static/media/messageIcon.b5c0dccb342a3356bd5626acf2af8c15.svg",
+    "static/media/instagram-safra.svg": "/static/media/instagram-safra.b059627f3c6e3f2dc51068d4be4e4124.svg",
+    "static/media/telegram.svg": "/static/media/telegram.50dd1b5dcb6ffa004a73c4a91fc7f40a.svg",
+    "static/media/moneyIcon.svg": "/static/media/moneyIcon.762bb7ee6554a7d26f59591ef5bea56d.svg",
+    "static/media/twitter.svg": "/static/media/twitter.d68606f516fd7d3cd96913a16625611d.svg",
+    "static/media/cog.svg": "/static/media/cog.34548dd7a0894ea236d6dbf721d409ff.svg",
+    "static/media/deniedToast.svg": "/static/media/deniedToast.bf513e065fcbadc10b5d015682de6569.svg",
+    "index.html": "/index.html",
+    "static/media/searchIconBlue.svg": "/static/media/searchIconBlue.c90c83c9106b85bb3c84359acbd4669a.svg",
+    "static/media/logoutIcon.svg": "/static/media/logoutIcon.3b1bd465593aa019fb782ed146939129.svg",
+    "static/media/closeBtn.svg": "/static/media/closeBtn.0514c947d59f088e915784eb20f8308f.svg",
+    "main.988338ce.css.map": "/static/css/main.988338ce.css.map",
+    "main.25d1fab9.js.map": "/static/js/main.25d1fab9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.988338ce.css",
+    "static/js/main.25d1fab9.js"
+  ]
+}
