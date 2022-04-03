@@ -19,7 +19,6 @@ export default function Header() {
           <div className="header-name">
             <div className="client-details">
               <p className="name">Carlos Alberto</p>
-              <p>Agência: 9999 Conta: 9999-9</p>
             </div>
             <div className="client-icons">
               <img src={searchIcon} alt="Message Icon" />

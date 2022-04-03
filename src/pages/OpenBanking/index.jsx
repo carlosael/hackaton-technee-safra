@@ -1,6 +1,5 @@
 import "./styles.css";
 import Header from "../../components/Header";
-import SafraAcademyIcon from "../../assets/SafraAcademyIcon.png";
 import SearchIcon from "../../assets/searchIconBlue.svg";
 import Points from "../../assets/points.png";
 import Books from "../../assets/books.svg";
@@ -9,14 +8,15 @@ import MoneyIcon from "../../assets/moneyIcon.svg";
 import Achievments from "../../assets/achievments.png";
 import LockedAchievments from "../../assets/lockedAchievs.png";
 import Popup from "../../components/Popup";
+import SafraOpenBankingLogo from "../../assets/SOBlogo.png";
 
-function Loan() {
+function OpenBanking() {
   return (
     <div className="container-academy">
       <Header />
       <div className="main-container">
         <div className="search-input">
-          <img src={SafraAcademyIcon} alt="search icon" />
+          <img src={SafraOpenBankingLogo} alt="search icon" />
           <input
             type="text"
             placeholder="O que você está procurando ?"
@@ -31,7 +31,7 @@ function Loan() {
       <div className="container-titles">
         <div className="title">
           <img src={Books} alt="Books icon" />
-          <h2>Cursos</h2>
+          <h2>Meu Curso</h2>
         </div>
         <div className="title">
           <img src={SearchFile} alt="Books icon" />
@@ -45,7 +45,7 @@ function Loan() {
       <div className="courses-modules">
         <div className="course">
           <div className="left-side">
-            <h1>Módulo Open Banking</h1>
+            <h1>Módulo Básico</h1>
             <img src={Achievments} alt="Achievment progress" />
           </div>
           <div className="right-side">
@@ -58,7 +58,7 @@ function Loan() {
         </div>
         <div className="course">
           <div className="left-side">
-            <h1>Módulo Marketing</h1>
+            <h1>Módulo Intermediário</h1>
             <img src={LockedAchievments} alt="Achievment progress" />
           </div>
           <div className="right-side">
@@ -73,7 +73,7 @@ function Loan() {
         </div>
         <div className="course">
           <div className="left-side">
-            <h1>Módulo Gestão</h1>
+            <h1>Módulo Avançado</h1>
             <img src={LockedAchievments} alt="Achievment progress" />
           </div>
           <div className="right-side">
@@ -94,4 +94,4 @@ function Loan() {
   );
 }
 
-export default Loan;
+export default OpenBanking;

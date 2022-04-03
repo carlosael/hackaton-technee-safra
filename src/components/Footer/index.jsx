@@ -22,7 +22,7 @@ export default function Footer() {
         <div class="ul-social">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/company/safra-banco/?originalSubdomain=br">
+              <a href="https://www.linkedin.com/company/safra-banco/">
                 <img src={LinkedinIcon} alt="Linkedin Icon"></img>
               </a>
             </li>

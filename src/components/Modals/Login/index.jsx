@@ -56,7 +56,7 @@ function LoginModal({ setOpenModalLogin }) {
 
     if (error) return;
 
-    history.push("/academy");
+    history.push("/openbanking");
     setOpenModalLogin(false);
   }
 

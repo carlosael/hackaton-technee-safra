@@ -1,9 +1,7 @@
-import Home from "../pages/Home/index.jsx";
-import Academy from "../pages/Academy/index.jsx";
-import LoanConfirmation from "../pages/LoanConfirmation/index";
-import Footer from "../components/Footer/index.jsx";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "../components/Footer/index.jsx";
+import Home from "../pages/Home/index.jsx";
+import OpenBanking from "../pages/OpenBanking/index.jsx";
 
 function Routes() {
   return (
@@ -11,8 +9,7 @@ function Routes() {
       <div className="main">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/academy" component={Academy} />
-          <Route path="/loanconfirmation" component={LoanConfirmation} />
+          <Route path="/openbanking" component={OpenBanking} />
         </Switch>
       </div>
       <Footer />

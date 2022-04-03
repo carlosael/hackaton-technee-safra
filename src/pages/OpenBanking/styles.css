@@ -68,6 +68,11 @@
   font-size: 1.5rem;
 }
 
+.right-side li {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
 .popup {
   position: fixed;
   bottom: 10rem;
