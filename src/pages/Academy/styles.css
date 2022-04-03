@@ -67,3 +67,9 @@
   text-align: left;
   font-size: 1.5rem;
 }
+
+.popup {
+  position: fixed;
+  bottom: 10rem;
+  right: 2rem;
+}

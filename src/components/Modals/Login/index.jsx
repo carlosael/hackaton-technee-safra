@@ -47,8 +47,10 @@ function LoginModal({ setOpenModalLogin }) {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (emailValidation.test(form.email)) {
+      setNoEmailError(false);
       setInvalidEmail(false);
     } else {
+      setNoEmailError(false);
       setInvalidEmail(true);
       error = true;
       return;

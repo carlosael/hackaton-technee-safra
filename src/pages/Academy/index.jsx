@@ -8,19 +8,9 @@ import SearchFile from "../../assets/searchFile.svg";
 import MoneyIcon from "../../assets/moneyIcon.svg";
 import Achievments from "../../assets/achievments.png";
 import LockedAchievments from "../../assets/lockedAchievs.png";
-import getBankDetails from "../../services/getBankDetails";
-import { useState, useEffect } from "react";
+import Popup from "../../components/Popup";
 
 function Loan() {
-  const [rendered, setRendered] = useState(false);
-
-  useEffect(() => {
-    if (!rendered) {
-      getBankDetails();
-      setRendered(true);
-    }
-  }, [rendered]);
-
   return (
     <div className="container-academy">
       <Header />
@@ -96,6 +86,9 @@ function Loan() {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="popup">
+        <Popup />
       </div>
     </div>
   );
