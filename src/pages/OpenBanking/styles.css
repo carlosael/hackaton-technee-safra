@@ -58,6 +58,10 @@
   width: 45rem;
 }
 
+.left-side img {
+  cursor: pointer;
+}
+
 .right-side {
   color: #fff;
 }
@@ -73,7 +77,7 @@
   margin-bottom: 1rem;
 }
 
-.popup {
+.services-popup {
   position: fixed;
   bottom: 10rem;
   right: 2rem;

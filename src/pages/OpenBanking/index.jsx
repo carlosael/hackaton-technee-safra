@@ -7,10 +7,24 @@ import SearchFile from "../../assets/searchFile.svg";
 import MoneyIcon from "../../assets/moneyIcon.svg";
 import Achievments from "../../assets/achievments.png";
 import LockedAchievments from "../../assets/lockedAchievs.png";
+import UnlockedAchiecments from "../../assets/unlockedAchievs.png";
 import Popup from "../../components/Popup";
 import SafraOpenBankingLogo from "../../assets/SOBlogo.png";
+import OpenBankingModal from "../../components/Modals/OpenBankingModal";
+import { useState } from "react";
 
 function OpenBanking() {
+  const [openSOBModal, setOpenSOBModal] = useState(false);
+  const [authorized, setAuthorized] = useState(false);
+
+  function handleOpenModal() {
+    if (!authorized) {
+      setAuthorized(true);
+      setOpenSOBModal(true);
+    } else {
+      return;
+    }
+  }
   return (
     <div className="container-academy">
       <Header />
@@ -33,9 +47,9 @@ function OpenBanking() {
           <img src={Books} alt="Books icon" />
           <h2>Meu Curso</h2>
         </div>
-        <div className="title">
+        <div className="title" onClick={() => setOpenSOBModal(true)}>
           <img src={SearchFile} alt="Books icon" />
-          <h2>Open Banking</h2>
+          <h2>Importar dados</h2>
         </div>
         <div className="title">
           <img src={MoneyIcon} alt="Books icon" />
@@ -59,25 +73,58 @@ function OpenBanking() {
         <div className="course">
           <div className="left-side">
             <h1>Módulo Intermediário</h1>
-            <img src={LockedAchievments} alt="Achievment progress" />
+            <img
+              src={authorized ? UnlockedAchiecments : LockedAchievments}
+              alt="Achievment progress"
+              onClick={handleOpenModal}
+            />
           </div>
           <div className="right-side">
-            <ul>
-              <li>1. Nível 1</li>
-              <li>2. Nível 2</li>
-              <li>3. Nível 3</li>
-              <li>4. Nível 4</li>
-              <li>5. Nível 5</li>
+            <ul onClick={handleOpenModal}>
+              <li>
+                1.{" "}
+                {authorized
+                  ? "O que e quais são as fases de implementação do Open Banking?"
+                  : "Nível 1"}
+              </li>
+              <li>
+                2.{" "}
+                {authorized
+                  ? "Fase 1 - Open Data padronizado das instituições financeiras"
+                  : "Nível 1"}
+              </li>
+              <li>
+                3.{" "}
+                {authorized
+                  ? "Fase 2 - Compartilhamento de dados do consumidor"
+                  : "Nível 2"}
+              </li>
+              <li>
+                4.{" "}
+                {authorized
+                  ? "Fase 3 - Serviços à escolha do consumidor"
+                  : "Nível 3"}
+              </li>
+              <li>
+                5.{" "}
+                {authorized
+                  ? "Fase 4 - Ampliação de dados, produtos e serviços"
+                  : "Nível 4"}
+              </li>
             </ul>
           </div>
         </div>
         <div className="course">
           <div className="left-side">
             <h1>Módulo Avançado</h1>
-            <img src={LockedAchievments} alt="Achievment progress" />
+            <img
+              src={LockedAchievments}
+              alt="Achievment progress"
+              onClick={handleOpenModal}
+            />
           </div>
           <div className="right-side">
-            <ul>
+            <ul onClick={handleOpenModal}>
               <li>1. Nível 1</li>
               <li>2. Nível 2</li>
               <li>3. Nível 3</li>
@@ -87,9 +134,10 @@ function OpenBanking() {
           </div>
         </div>
       </div>
-      <div className="popup">
+      <div className="services-popup">
         <Popup />
       </div>
+      {openSOBModal && <OpenBankingModal setOpenSOBModal={setOpenSOBModal} />}
     </div>
   );
 }

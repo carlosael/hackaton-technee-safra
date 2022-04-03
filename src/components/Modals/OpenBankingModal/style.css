@@ -1,0 +1,25 @@
+.register-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.close-icon {
+  margin-left: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-buttons {
+  display: flex;
+  justify-content: space-around;
+  color: rgba(0, 0, 0, 0.534);
+  margin-bottom: 1rem;
+}
+
+.sub-buttons p {
+  font-size: 0.8rem;
+}

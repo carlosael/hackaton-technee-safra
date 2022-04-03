@@ -3,7 +3,7 @@ import whiteLogo from "../../assets/logo-safra-white.svg";
 import logoutIcon from "../../assets/logoutIcon.svg";
 import messageIcon from "../../assets/messageIcon.svg";
 import lockIcon from "../../assets/lockIcon.svg";
-import searchIcon from "../../assets/searchIcon.svg";
+import cogIcon from "../../assets/cog.svg";
 import { useHistory } from "react-router-dom";
 
 export default function Header() {
@@ -21,8 +21,8 @@ export default function Header() {
               <p className="name">Carlos Alberto</p>
             </div>
             <div className="client-icons">
-              <img src={searchIcon} alt="Message Icon" />
-              <img src={lockIcon} alt="Message Icon" />
+              <img src={cogIcon} alt="Cog Icon" />
+              <img src={lockIcon} alt="Lock Icon" />
               <img src={messageIcon} alt="Message Icon" />
             </div>
             <div className="logout" onClick={() => history.push("/")}>
