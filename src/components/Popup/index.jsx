@@ -37,7 +37,14 @@ export default function BasicPopover() {
 
   return (
     <div className="popup">
-      <Button aria-describedby={id} variant="contained" onClick={handleClick}>
+      <Button
+        aria-describedby={id}
+        variant="contained"
+        onClick={handleClick}
+        sx={{
+          backgroundColor: "#00006c",
+        }}
+      >
         Conheça alguns dos <br /> nossos serviços!
       </Button>
       <Popover

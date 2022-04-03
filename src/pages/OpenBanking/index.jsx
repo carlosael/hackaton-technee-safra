@@ -1,18 +1,19 @@
-import "./styles.css";
-import Header from "../../components/Header";
-import SearchIcon from "../../assets/searchIconBlue.svg";
-import Points from "../../assets/points.png";
-import Books from "../../assets/books.svg";
-import SearchFile from "../../assets/searchFile.svg";
-import MoneyIcon from "../../assets/moneyIcon.svg";
-import Achievments from "../../assets/achievments.png";
-import LockedAchievments from "../../assets/lockedAchievs.png";
-import UnlockedAchiecments from "../../assets/unlockedAchievs.png";
-import Popup from "../../components/Popup";
-import SafraOpenBankingLogo from "../../assets/SOBlogo.png";
-import OpenBankingModal from "../../components/Modals/OpenBankingModal";
 import { useState } from "react";
-
+import Achievments from "../../assets/achievments.png";
+import Books from "../../assets/books.svg";
+import LockedAchievments from "../../assets/lockedAchievs.png";
+import MoneyIcon from "../../assets/moneyIcon.svg";
+import Points from "../../assets/points.png";
+import SearchFile from "../../assets/searchFile.svg";
+import SearchIcon from "../../assets/searchIconBlue.svg";
+import SafraOpenBankingLogo from "../../assets/SOBlogo.png";
+import UnlockedAchiecments from "../../assets/unlockedAchievs.png";
+import Header from "../../components/Header";
+import OpenBankingModal from "../../components/Modals/OpenBankingModal";
+import Popup from "../../components/Popup";
+import "./styles.css";
+import { toast, ToastContainer } from "react-toastify";
+import DeniedToastify from "../../helpers/Toastify/Toastify";
 function OpenBanking() {
   const [openSOBModal, setOpenSOBModal] = useState(false);
   const [authorized, setAuthorized] = useState(false);
@@ -24,6 +25,13 @@ function OpenBanking() {
     } else {
       return;
     }
+  }
+
+  function handleToast() {
+    DeniedToastify(
+      "Opa, parece que você ainda não concluiu o módulo intermediário"
+    );
+    toast.clearWaitingQueue();
   }
   return (
     <div className="container-academy">
@@ -120,11 +128,11 @@ function OpenBanking() {
             <img
               src={LockedAchievments}
               alt="Achievment progress"
-              onClick={handleOpenModal}
+              onClick={handleToast}
             />
           </div>
           <div className="right-side">
-            <ul onClick={handleOpenModal}>
+            <ul onClick={handleToast}>
               <li>1. Nível 1</li>
               <li>2. Nível 2</li>
               <li>3. Nível 3</li>
@@ -138,6 +146,7 @@ function OpenBanking() {
         <Popup />
       </div>
       {openSOBModal && <OpenBankingModal setOpenSOBModal={setOpenSOBModal} />}
+      <ToastContainer limit={1} />
     </div>
   );
 }
