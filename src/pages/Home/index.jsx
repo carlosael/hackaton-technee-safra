@@ -53,7 +53,7 @@ function Home() {
             </h1>
             <p>
               O <strong>Safra Academy</strong> é o seu gui virtal de{" "}
-              <strong>empreendodorismo</strong> pelo Banco Safra.
+              <strong>empreendedorismo</strong> pelo Banco Safra.
             </p>
             <p>
               Aprenda a como tornar o seu negócio maiseficiente e rentável com

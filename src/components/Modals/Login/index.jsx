@@ -3,12 +3,11 @@ import CloseBtn from "../../../assets/closeBtn.svg";
 import { useState } from "react";
 import Button from "../../Button";
 import InputErrorMessage from "../../InputErrorMessage";
-import InputMask from "react-input-mask";
 import SafraLogo from "../../../assets/logo-safra.svg";
 import { useHistory } from "react-router-dom";
 
 const defaultValuesForm = {
-  cnpj: "",
+  email: "",
   senha: "",
 };
 
@@ -17,8 +16,8 @@ function LoginModal({ setOpenModalLogin }) {
 
   const [form, setForm] = useState(defaultValuesForm);
   const [noPasswordError, setNoPasswordError] = useState(false);
-  const [noCNPJError, setNoCNPJError] = useState(false);
-  const [invalidCNPJ, setInvalidCNPJ] = useState(false);
+  const [noEmailError, setNoEmailError] = useState(false);
+  const [invalidEmail, setInvalidEmail] = useState(false);
 
   function handleCloseModal() {
     setOpenModalLogin(false);
@@ -30,11 +29,11 @@ function LoginModal({ setOpenModalLogin }) {
 
   async function handleSubmitForm() {
     let error = false;
-    if (!form.cnpj) {
-      setNoCNPJError(true);
+    if (!form.email) {
+      setNoEmailError(true);
       error = true;
     } else {
-      setNoCNPJError(false);
+      setNoEmailError(false);
     }
 
     if (!form.senha) {
@@ -44,15 +43,19 @@ function LoginModal({ setOpenModalLogin }) {
       setNoPasswordError(false);
     }
 
-    if (form.cnpj.includes("_")) {
-      setInvalidCNPJ(true);
-      error = true;
+    const emailValidation =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (emailValidation.test(form.email)) {
+      setInvalidEmail(false);
     } else {
-      setInvalidCNPJ(false);
+      setInvalidEmail(true);
+      error = true;
+      return;
     }
 
     if (error) return;
-    console.log("foi");
+
     history.push("/academy");
     setOpenModalLogin(false);
   }
@@ -71,19 +74,18 @@ function LoginModal({ setOpenModalLogin }) {
         </div>
         <form className="inputs">
           <div className="input-container">
-            <label htmlFor="CPF">CNPJ*</label>
-            <InputMask
-              mask="99.999.999/9999-99"
+            <label htmlFor="email">E-mail*</label>
+            <input
               type="text"
-              placeholder="Digite o CNPJ"
-              name="cnpj"
-              value={form.cnpj}
+              placeholder="Digite o email"
+              name="email"
+              value={form.email}
               onChange={(e) => handleChange(e.target)}
-              className={noCNPJError || invalidCNPJ ? "error" : ""}
+              className={noEmailError || invalidEmail ? "error" : ""}
             />
-            {noCNPJError && <InputErrorMessage />}
-            {invalidCNPJ && (
-              <InputErrorMessage>CNPJ inválido</InputErrorMessage>
+            {noEmailError && <InputErrorMessage />}
+            {invalidEmail && (
+              <InputErrorMessage>E-mail inválido</InputErrorMessage>
             )}
           </div>
           <div className="input-container">
@@ -105,9 +107,9 @@ function LoginModal({ setOpenModalLogin }) {
           </Button>
         </div>
         <div className="new-acc">
-          <p>Ainda não é cliente?</p>
+          <p>Ainda não tem cadastro?</p>
           <a href="#">
-            <strong>Abra sua conta</strong>
+            <strong>Faça a sua conta</strong>
           </a>
         </div>
       </div>
