@@ -12,21 +12,11 @@ export default function Footer() {
       <div class="links">
         <div class="logo-nav">
           <ul>
-            <li>
-              <a href="#">Serviços</a>
-            </li>
-            <li>
-              <a href="#">Relacionamento</a>
-            </li>
-            <li>
-              <a href="#">Sobre</a>
-            </li>
-            <li>
-              <a href="#">Atendimento</a>
-            </li>
-            <li>
-              <a href="#">Investimentos</a>
-            </li>
+            <li>Serviços</li>
+            <li>Relacionamento</li>
+            <li>Sobre</li>
+            <li>Atendimento</li>
+            <li>Investimentos</li>
           </ul>
         </div>
         <div class="ul-social">

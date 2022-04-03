@@ -12,8 +12,6 @@ export default function BasicPopover() {
 
   useEffect(() => {
     getBankDetails(setLoanTypes);
-
-    console.log("loanTypes", loanTypes);
   }, []);
 
   const handleClick = (event) => {
@@ -57,7 +55,7 @@ export default function BasicPopover() {
         <Typography sx={{ p: 2 }}>
           {loanTypes.map((loanType) => (
             <p>
-              <strong>{editLoanType(loanType.type)}</strong>
+              <strong>‣ {editLoanType(loanType.type)}</strong>
             </p>
           ))}
         </Typography>

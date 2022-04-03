@@ -36,6 +36,11 @@ footer {
   margin-left: 43px;
 }
 
+.logo-nav li {
+  color: #fff;
+  cursor: pointer;
+}
+
 .ul-social {
   text-align: left;
   color: #fff;

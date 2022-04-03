@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./style.css";
 import CloseBtn from "../../../assets/closeBtn.svg";
 import { useState } from "react";
@@ -34,6 +35,16 @@ function LoginModal({ setOpenModalLogin }) {
       error = true;
     } else {
       setNoEmailError(false);
+      const emailValidation =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+      if (emailValidation.test(form.email)) {
+        setInvalidEmail(false);
+      } else {
+        setInvalidEmail(true);
+        error = true;
+        return;
+      }
     }
 
     if (!form.senha) {
@@ -41,19 +52,6 @@ function LoginModal({ setOpenModalLogin }) {
       error = true;
     } else {
       setNoPasswordError(false);
-    }
-
-    const emailValidation =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    if (emailValidation.test(form.email)) {
-      setNoEmailError(false);
-      setInvalidEmail(false);
-    } else {
-      setNoEmailError(false);
-      setInvalidEmail(true);
-      error = true;
-      return;
     }
 
     if (error) return;
