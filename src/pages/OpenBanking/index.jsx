@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import Achievments from "../../assets/achievments.png";
 import Books from "../../assets/books.svg";
 import LockedAchievments from "../../assets/lockedAchievs.png";
@@ -11,9 +12,9 @@ import UnlockedAchiecments from "../../assets/unlockedAchievs.png";
 import Header from "../../components/Header";
 import OpenBankingModal from "../../components/Modals/OpenBankingModal";
 import Popup from "../../components/Popup";
-import "./styles.css";
-import { toast, ToastContainer } from "react-toastify";
 import DeniedToastify from "../../helpers/Toastify/Toastify";
+import "./styles.css";
+
 function OpenBanking() {
   const [openSOBModal, setOpenSOBModal] = useState(false);
   const [authorized, setAuthorized] = useState(false);
@@ -22,14 +23,12 @@ function OpenBanking() {
     if (!authorized) {
       setAuthorized(true);
       setOpenSOBModal(true);
-    } else {
-      return;
     }
   }
 
   function handleToast() {
     DeniedToastify(
-      "Opa, parece que você ainda não concluiu o módulo intermediário"
+      "Opa, parece que você ainda não concluiu o módulo intermediário",
     );
     toast.clearWaitingQueue();
   }
@@ -90,31 +89,36 @@ function OpenBanking() {
           <div className="right-side">
             <ul onClick={handleOpenModal}>
               <li>
-                1.{" "}
+                1.
+                {" "}
                 {authorized
                   ? "O que e quais são as fases de implementação do Open Banking?"
                   : "Nível 1"}
               </li>
               <li>
-                2.{" "}
+                2.
+                {" "}
                 {authorized
                   ? "Fase 1 - Open Data padronizado das instituições financeiras"
                   : "Nível 1"}
               </li>
               <li>
-                3.{" "}
+                3.
+                {" "}
                 {authorized
                   ? "Fase 2 - Compartilhamento de dados do consumidor"
                   : "Nível 2"}
               </li>
               <li>
-                4.{" "}
+                4.
+                {" "}
                 {authorized
                   ? "Fase 3 - Serviços à escolha do consumidor"
                   : "Nível 3"}
               </li>
               <li>
-                5.{" "}
+                5.
+                {" "}
                 {authorized
                   ? "Fase 4 - Ampliação de dados, produtos e serviços"
                   : "Nível 4"}

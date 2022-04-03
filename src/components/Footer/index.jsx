@@ -9,8 +9,8 @@ import TwitterIcon from "../../assets/twitter.svg";
 export default function Footer() {
   return (
     <footer>
-      <div class="links">
-        <div class="logo-nav">
+      <div className="links">
+        <div className="logo-nav">
           <ul>
             <li>Serviços</li>
             <li>Relacionamento</li>
@@ -19,36 +19,36 @@ export default function Footer() {
             <li>Investimentos</li>
           </ul>
         </div>
-        <div class="ul-social">
+        <div className="ul-social">
           <ul>
             <li>
               <a href="https://www.linkedin.com/company/safra-banco/">
-                <img src={LinkedinIcon} alt="Linkedin Icon"></img>
+                <img src={LinkedinIcon} alt="Linkedin Icon" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/bancosafra/?hl=pt-br">
-                <img src={InstagramIcon} alt="Linkedin Icon"></img>
+                <img src={InstagramIcon} alt="Linkedin Icon" />
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UC_eA5WnJz2rQ2iJ9cF97adw">
-                <img src={YoutubeIcon} alt="Linkedin Icon"></img>
+                <img src={YoutubeIcon} alt="Linkedin Icon" />
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/safrainvestimentos">
-                <img src={FacebookIcon} alt="Linkedin Icon"></img>
+                <img src={FacebookIcon} alt="Linkedin Icon" />
               </a>
             </li>
             <li>
               <a href="https://t.me/safraconteudo">
-                <img src={TelegramIcon} alt="Linkedin Icon"></img>
+                <img src={TelegramIcon} alt="Linkedin Icon" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/bancosafra">
-                <img src={TwitterIcon} alt="Linkedin Icon"></img>
+                <img src={TwitterIcon} alt="Linkedin Icon" />
               </a>
             </li>
           </ul>

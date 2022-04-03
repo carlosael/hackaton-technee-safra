@@ -2,8 +2,8 @@ import * as React from "react";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import getBankDetails from "../../services/getBankDetails";
 import { useState, useEffect } from "react";
+import getBankDetails from "../../services/getBankDetails";
 
 export default function BasicPopover() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,12 +23,11 @@ export default function BasicPopover() {
   };
 
   function editLoanType(loanType) {
-    let removeEmprestimo = loanType.replace(/EMPRESTIMO_/g, " ");
-    let removeUnderline = removeEmprestimo.replace(/_/g, " ");
-    let allLettersToLowerCase = removeUnderline.toLowerCase();
-    let firstLetterToUpperCase =
-      allLettersToLowerCase.charAt(1).toUpperCase() +
-      allLettersToLowerCase.slice(2);
+    const removeEmprestimo = loanType.replace(/EMPRESTIMO_/g, " ");
+    const removeUnderline = removeEmprestimo.replace(/_/g, " ");
+    const allLettersToLowerCase = removeUnderline.toLowerCase();
+    const firstLetterToUpperCase = allLettersToLowerCase.charAt(1).toUpperCase()
+      + allLettersToLowerCase.slice(2);
     return firstLetterToUpperCase;
   }
 
@@ -45,7 +44,9 @@ export default function BasicPopover() {
           backgroundColor: "#00006c",
         }}
       >
-        Conheça alguns dos <br /> nossos serviços!
+        Conheça alguns dos
+        <br />
+        nossos serviços!
       </Button>
       <Popover
         id={id}
@@ -60,7 +61,11 @@ export default function BasicPopover() {
         <Typography sx={{ p: 2 }}>
           {loanTypes.map((loanType) => (
             <p>
-              <strong>‣ {editLoanType(loanType.type)}</strong>
+              <strong>
+                ‣
+                {" "}
+                {editLoanType(loanType.type)}
+              </strong>
             </p>
           ))}
         </Typography>

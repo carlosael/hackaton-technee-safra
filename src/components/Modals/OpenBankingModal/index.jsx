@@ -24,8 +24,12 @@ function OpenBankingModal({ setOpenSOBModal }) {
         </div>
         <p>
           Agora que você já terminou o módulo introdutório
-          <br /> ao open banking, você gostaria de se tornar
-          <br /> correntista e trazer seus dados de outros bancos?
+          <br />
+          {" "}
+          ao open banking, você gostaria de se tornar
+          <br />
+          {" "}
+          correntista e trazer seus dados de outros bancos?
         </p>
 
         <div className="buttons">
@@ -44,8 +48,12 @@ function OpenBankingModal({ setOpenSOBModal }) {
         <p>
           <strong>
             Vamos utilizar essas informações para te oferecer
-            <br /> soluções mais aderentes ao seu perfil,
-            <br /> de forma segura e sigilosa.
+            <br />
+            {" "}
+            soluções mais aderentes ao seu perfil,
+            <br />
+            {" "}
+            de forma segura e sigilosa.
           </strong>
         </p>
       </div>

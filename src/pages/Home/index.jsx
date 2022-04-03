@@ -1,9 +1,9 @@
 import "./styles.css";
+import { useState } from "react";
 import whiteLogo from "../../assets/logo-safra-white.svg";
 import Button from "../../components/Button";
 import ModalLogin from "../../components/Modals/Login";
 import MainPhoto from "../../assets/element.JPG";
-import { useState } from "react";
 import SafraOpenBankingLogo from "../../assets/Safra_Open_Banking_Azul.png";
 import AdditionalInfo from "../../assets/complemento2.png";
 
@@ -33,12 +33,24 @@ function Home() {
             <img src={SafraOpenBankingLogo} alt="Safra Academy Logo" />
             <strong>
               <h1>
-                Plataforma de educação <br /> sobre Open Banking.
+                Plataforma de educação
+                {" "}
+                <br />
+                {" "}
+                sobre Open Banking.
               </h1>
             </strong>
             <p>
-              Visando promover a cultura de dados abertos no <br /> Brasil, o
-              Safra te convida a ser protagonista desse <br /> novo jeito de
+              Visando promover a cultura de dados abertos no
+              {" "}
+              <br />
+              {" "}
+              Brasil, o
+              Safra te convida a ser protagonista desse
+              {" "}
+              <br />
+              {" "}
+              novo jeito de
               estar no controle da sua vida financeira.
             </p>
           </div>
@@ -49,11 +61,19 @@ function Home() {
         <div className="second-card">
           <div className="left-text">
             <h1>
-              Com o Open Banking, <br /> a sua relação com o banco jamais será a
+              Com o Open Banking,
+              {" "}
+              <br />
+              {" "}
+              a sua relação com o banco jamais será a
               mesma.
             </h1>
             <p>
-              O <strong>Safra | Open Banking</strong> é o seu guia virtual sobre
+              O
+              {" "}
+              <strong>Safra | Open Banking</strong>
+              {" "}
+              é o seu guia virtual sobre
               a cultura de dados abertos pelo Banco Safra e como isso vai mudar
               a sua relação com os bancos.
             </p>
@@ -70,17 +90,31 @@ function Home() {
           <div className="right-text">
             <h2>Para quem é o Safra | Open Banking?</h2>
             <p>
-              Feito para <strong>qualquer pessoa</strong> que deseja ter mais
+              Feito para
+              {" "}
+              <strong>qualquer pessoa</strong>
+              {" "}
+              que deseja ter mais
               segurança, versatilidade, controle e agilidade com soluções mais
               eficientes.
             </p>
             <p>
-              A <strong>Safra | Open Banking</strong> oferece conteúdos sobre
-              como o <strong>Open Finance</strong> é benéfico na hora da escolha
+              A
+              {" "}
+              <strong>Safra | Open Banking</strong>
+              {" "}
+              oferece conteúdos sobre
+              como o
+              {" "}
+              <strong>Open Finance</strong>
+              {" "}
+              é benéfico na hora da escolha
               de serviços financeiros.
             </p>
             <p>
-              Você é dono dos seus dados. <br />
+              Você é dono dos seus dados.
+              {" "}
+              <br />
               Nós te ajudamos a fazer escolhas.
             </p>
           </div>

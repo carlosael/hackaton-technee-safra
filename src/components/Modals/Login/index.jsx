@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./style.css";
-import CloseBtn from "../../../assets/closeBtn.svg";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import CloseBtn from "../../../assets/closeBtn.svg";
 import Button from "../../Button";
 import InputErrorMessage from "../../InputErrorMessage";
 import SafraLogo from "../../../assets/logo-safra.svg";
-import { useHistory } from "react-router-dom";
 
 const defaultValuesForm = {
   email: "",
@@ -35,8 +35,7 @@ function LoginModal({ setOpenModalLogin }) {
       error = true;
     } else {
       setNoEmailError(false);
-      const emailValidation =
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const emailValidation = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
       if (emailValidation.test(form.email)) {
         setInvalidEmail(false);
@@ -89,8 +88,9 @@ function LoginModal({ setOpenModalLogin }) {
             )}
           </div>
           <div className="input-container">
-            <label htmlFor="Senha">Senha*</label>
+            <label htmlFor="senha">Senha*</label>
             <input
+              id="senha"
               type="password"
               placeholder="Digite a senha"
               name="senha"
